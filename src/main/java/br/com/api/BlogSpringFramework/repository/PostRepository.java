@@ -16,5 +16,6 @@ public interface PostRepository extends CrudRepository<Post, Integer> {
     Post findById(int id);
 
     //Deletar uma postagem do banco de dados.
+    void delete(Post post);
 
 }
