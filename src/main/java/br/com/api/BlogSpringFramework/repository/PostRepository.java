@@ -13,6 +13,7 @@ public interface PostRepository extends CrudRepository<Post, Integer> {
     List<Post> findAll();
 
     //Ler uma postagem específica do banco de dados.
+    Post findById(int id);
 
     //Deletar uma postagem do banco de dados.
 
