@@ -8,6 +8,7 @@ import java.util.List;
 public interface PostRepository extends CrudRepository<Post, Integer> {
 
     //Criar e/ou atualizar uma postagem no banco de dados.
+    <P extends Post> P save(P post);
 
     //Ler todos as postagens do banco de dados.
     List<Post> findAll();
